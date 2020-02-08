@@ -11,7 +11,8 @@
 			<ul class="list-group">
 				<?php foreach ($data['siswa'] as $siswa): ?>
 					<li class="list-group-item">
-						<?= $siswa['nama'] ?><a href="<?= BASEURL; ?>/siswa/detail/<?= $siswa['id'] ?>" class="badge badge-primary float-right">Detail</a>
+						<?= $siswa['nama'] ?><a href="<?= BASEURL; ?>/siswa/hapus/<?= $siswa['id'] ?>" class="badge badge-danger float-right" onclick="return confirm('Yakin?')">Hapus</a>
+						<a href="<?= BASEURL; ?>/siswa/detail/<?= $siswa['id'] ?>" class="badge badge-primary float-right mr-2">Detail</a>
 					</li>
 				<?php endforeach; ?>
 			</ul>
