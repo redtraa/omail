@@ -1,6 +1,11 @@
 <div class="container mt-3">
 	<div class="row">
 		<div class="col-lg-6">
+			<?php Flasher::flash(); ?>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-6">
 			<button type="button" class="btn btn-primary mb-3" data-toggle="modal" data-target="#formModal">Tambah Data Siswa</button>
 			<h3>Daftar Siswa</h3>
 			<ul class="list-group">
